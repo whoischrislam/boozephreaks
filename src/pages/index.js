@@ -4,12 +4,10 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Header from "../components/header"
 
 const IndexPage = () => (
   <Layout>
-    <div className="Header">
-      <br />
-    </div>
     
     <div className="Hero">
         <div className="HeroGroup">

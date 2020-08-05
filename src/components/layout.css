@@ -11,19 +11,22 @@ body {
 a {
   color: #8a2be2;
   font-weight: 600;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
 /*Page Layout*/
 
-.Header {
-  background: url('../images/boozephreaks_logo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 150px;
-  margin: 50px;
+
+@keyframes HeroAnimation {
+  0% {
+      opacity: 0;
+      transform: translateY(20px)
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0px)
+  }
 }
 
 .Hero {
@@ -31,6 +34,7 @@ a {
   background-size: cover;
   background-position: center;
   padding: 50px 50px;
+  margin-top:280px;
 }
 
 .Hero h1 {
@@ -47,6 +51,7 @@ a {
 }
 
 .Hero a {
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   font-size: 21.3px;
   font-weight: 700;
   color: white;
@@ -57,7 +62,13 @@ a {
   text-decoration: none;
 }
 
+.Hero a:hover {
+  background: #A65DE9;
+}
+
 .HeroGroup {
+  animation: HeroAnimation 1.5s 0.3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 0;
   background-color: rgba(0,0,0, 0.8);
   max-width: 500px;
   margin: 0 auto;
