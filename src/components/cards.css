@@ -1,0 +1,102 @@
+.Card {
+    width: 800px;
+    height: 300px;
+    margin: 0px auto 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0, 0.20);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    cursor: pointer;
+}
+
+.Card:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 30px 60px rgba(0,0,0, 0.5);
+}
+
+.Card:hover img {
+    transform: translateY(-20px);
+}
+
+.Card img {
+    height: 110%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Card h3 {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0 0 45%;
+    
+}
+
+.Card p {
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    align-self: end;
+    margin: 0 0 20px 45%;
+}
+
+
+.Cards {
+    margin: 0px auto 0px;
+    width: 800px;
+}
+
+@media (max-width: 1060px) {
+    .Cards {
+        width: 800px;
+    }
+}
+
+@media (max-width: 720px) {
+    .Cards {
+        margin: 0px auto 0px;
+        width: 400px;
+    }
+
+    .Card {
+        width: 400px;
+        height: 600px;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0, 0.20);
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+        cursor: pointer;
+    }
+
+    .Card img {
+        height:50%;
+        width:100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .Card h3 {
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 20px 0 0 20px;
+        
+    }
+    
+    .Card p {
+        color: black;
+        font-weight: 600;
+        font-size: 18px;
+        align-self: start;
+        margin: 0 20px 0 20px;
+    }
+}
