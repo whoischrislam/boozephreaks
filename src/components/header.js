@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => (
     </div>
   </header>
 )
-
+/*
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }
@@ -38,5 +38,5 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 }
-
+*/
 export default Header
