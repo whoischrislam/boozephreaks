@@ -60,11 +60,11 @@
 @media (max-width: 720px) {
     .Cards {
         margin: 0px auto 0px;
-        width: 400px;
+        width: 300px;
     }
 
     .Card {
-        width: 400px;
+        width: 300px;
         height: 600px;
         position: relative;
         border-radius: 20px;

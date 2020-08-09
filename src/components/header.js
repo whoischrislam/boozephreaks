@@ -29,16 +29,16 @@ class Header extends React.Component {
   render() {
     return (
       <div className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}>
-      <Link to="/"><img className="Logo" src={require('../images/boozephreaks_logo.png')} />
-  </Link>
-      <div className="HeaderGroup">
-        <Link to="/events">Events</Link>
-        <Link to="/hireus">Hire us</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/buy"><button>Shop</button></Link>
-      </div>
+        <Link to="/"><img className="Logo" src={require('../images/boozephreaks_logo.png')} />
+        </Link>
+        <div className="HeaderGroup">
+          <Link to="/events">Events</Link>
+          <Link to="/hireus">Hire us</Link>
+          <Link to="/about">About</Link>
+          <Link to="/blog">Blog</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/buy"><button>Shop</button></Link>
+        </div>
 </div>
     )
   }

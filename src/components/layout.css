@@ -38,13 +38,15 @@ a {
 }
 
 .Hero h1 {
+  text-align: left;
   margin: 0;
   color: white;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 1.1;
 }
 
 .Hero p {
+  text-align: left;
   font-size: 21.3px;
   line-height: 1.4;
   color: rgba(255,255,255, 0.8);
@@ -72,6 +74,25 @@ a {
   background-color: rgba(0,0,0, 0.8);
   max-width: 500px;
   margin: 0 auto;
-  padding: 50px 50px;
+  padding: 40px 40px;
   text-align: center;
+}
+
+@media (max-width: 640px) {
+
+  .Hero {
+    margin-top:150px;
+  }
+
+  .Hero a {
+    font-size: 20px;
+    background: rgba(138, 43, 226, 0.7);
+    padding: 20px 30px;
+    border-radius: 60px;
+    text-decoration: none;
+  }
+
+  .HeroGroup {
+    padding: 20px 20px;
+  }
 }
