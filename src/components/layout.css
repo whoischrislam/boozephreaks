@@ -2,16 +2,38 @@
 
 body {
   font-family: Proxima Nova, Helvetica, sans-serif;
-  font-size: 21.3px;
+  font-size: 22px;
   line-height: 1.4;
   margin: 0;
   -webkit-font-smoothing: antialiased;
 }
 
+
+h1 {
+  text-align: center;
+  margin: 0;
+  color: black;
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+p {
+  margin: 10px 0px 30px 0px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.4;
+  color: black;
+}
+
 a {
   color: #8a2be2;
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #A65DE9;
+  text-decoration: underline;
 }
 
 
@@ -21,7 +43,7 @@ a {
 @keyframes HeroAnimation {
   0% {
       opacity: 0;
-      transform: translateY(20px)
+      transform: translateY(0px)
   }
   100% {
       opacity: 1;
@@ -29,63 +51,119 @@ a {
   }
 }
 
-.Hero {
-  background: url('../images/bottles.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 50px 50px;
-  margin-top:280px;
+.subscribe_section {
+  border: 1px solid black;
+  margin-top: 242px;
+  max-width: 100%;
 }
 
-.Hero h1 {
-  text-align: left;
-  margin: 0;
-  color: white;
-  font-size: 40px;
-  line-height: 1.1;
-}
-
-.Hero p {
-  text-align: left;
-  font-size: 21.3px;
-  line-height: 1.4;
-  color: rgba(255,255,255, 0.8);
-}
-
-.Hero a {
+.subscribe_section a {
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-  font-size: 21.3px;
+  font-size: 26px;
   font-weight: 700;
   color: white;
-  text-transform: uppercase;
-  background: rgba(138, 43, 226, 0.7);
-  padding: 20px 30px;
-  border-radius: 60px;
+  background: black;
+  padding: 10px 30px;
   text-decoration: none;
 }
 
-.Hero a:hover {
-  background: #A65DE9;
+.subscribe_section a:hover {
+  background: #8a2be2;
 }
 
-.HeroGroup {
-  animation: HeroAnimation 1.5s 0.3s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
-  opacity: 0;
-  background-color: rgba(0,0,0, 0.8);
-  max-width: 500px;
+.subscribe_content {
+  max-width: 900px;
   margin: 0 auto;
-  padding: 40px 40px;
+  padding: 40px 0px;
   text-align: center;
 }
 
+.hero {
+  height: 720px;
+  background: url('../images/tour.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.event_section {
+  max-width: 100%;
+}
+
+.event_content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0px;
+  text-align: center;
+}
+
+.youtube_section {
+  background-color: #e8e8e8;
+  max-width: 100%;
+}
+
+.youtube_content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0px;
+  text-align: center;
+}
+
+.exploratorium_hero {
+  height: 720px;
+  background: url('../images/exploratorium.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.about_section {
+  background-color: #000;
+  max-width: 100%;
+}
+
+.about_content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0px;
+  text-align: center;
+}
+
+.about_section h1 {
+  color: white;
+}
+
+.about_section p {
+  color: white;
+}
+
+.about_hero {
+  height: 720px;
+  background: url('../images/tour2.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 1060px) {
+  .event_section {
+      width: 800px;
+  }
+}
+
+@media (max-width: 720px) {
+  .event_section {
+      margin: 0px auto 0px;
+      width: 300px;
+  }
+}
+
+
 @media (max-width: 640px) {
 
-  .Hero {
+  .subscribe_section {
     margin-top:150px;
     padding: 20px 20px;
   }
 
-  .Hero a {
+  .subscribe_section a {
     font-size: 20px;
     background: rgba(138, 43, 226, 0.7);
     padding: 20px 20px;
@@ -93,7 +171,7 @@ a {
     text-decoration: none;
   }
 
-  .HeroGroup {
+  .subscribe_content {
     padding: 20px 20px;
   }
 }
